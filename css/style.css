@@ -1,0 +1,42 @@
+.header_{
+    margin-bottom: 40px;
+}
+#tex{
+    border-bottom: 1px solid #f8f7f5;
+    padding-bottom: 1.5rem;
+    margin-top: 0.75rem!important;
+}
+
+.city-modal__cities-link {
+    font-size: .875rem;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #353433;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 1rem;
+    margin-top: 1rem!important;
+}
+.city-modal__cities {
+    list-style: none;
+    padding: 0;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    min-height: 11.5rem;
+}
+
+.nav-link{
+    color: black;
+}
+.nav-link:hover, .nav-link:focus {
+    color: #ff491f;
+  }
+  .city-modal__cities-link:hover {
+    color: #ff491f;
+
+}
