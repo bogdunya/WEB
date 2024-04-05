@@ -1,3 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url(/font/geometria-medium.ttf);
+}
+
+#header_fixed_{
+    position:sticky;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+  }
+  .search-input {
+    flex: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .search-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+.btn-base-brand-1 {
+    background-color: rgb(255, 73, 31);
+    color: rgb(255, 255, 255);
+    border-radius: 0.5625rem;
+    font-weight: 500;
+}
+
+.btn-addon {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.btn-addon:hover{
+    color: white;
+    background-color: rgb(255, 48, 0);
+}
+
+
 .header_{
     margin-bottom: 40px;
 }
@@ -7,6 +52,27 @@
     margin-top: 0.75rem!important;
 }
 
+.header-main__backcall {
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    background-image: url(/img/info-32.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -0.0625rem;
+    margin-left: 0.25rem;
+    position: relative;
+}
+
+.header-main__phone {
+    font-weight: 700;
+    font-size: .75rem;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
 .city-modal__cities-link {
     font-size: .875rem;
     line-height: 1.4;
@@ -29,10 +95,43 @@
     margin-bottom: 1.5rem;
     min-height: 11.5rem;
 }
+a{
+    font-family: "Geometria";
+}
 
 .nav-link{
+    font-family: "Geometria";
     color: black;
 }
+.info_time_info{
+    padding-top: 4px;
+
+}
+
+
+.info_time_{
+    margin: 0;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.header-actions__item {
+    text-align: center;
+    
+    font-weight: 500;
+    letter-spacing: -.02em;
+    display: block;
+    color: #353433;
+}
+
+.navbar_{
+    color: grey;
+    font-size: 12px;
+    margin: 0;
+    padding-left: 1px;
+    padding-right: 18px;
+    
+    }
 .nav-link:hover, .nav-link:focus {
     color: #ff491f;
   }

@@ -18,31 +18,164 @@
       style="border: 1px solid #fff; box-shadow: 0px 5px 40px #d3d3d3"
     >
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-2">
+        <div class="row no-gutters">
+          <div class="col-2 ps-0">
             <a
               class="nav-link"
               data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
+              data-bs-target="#offcanvasRightForRegion"
               aria-controls="offcanvasRight"
               href="#"
-              ><i class="icon-location"></i> vlg</a
+              style="font-size: 14px"
+              ><i class="icon-location"></i> Волгоград</a
             >
           </div>
-          <div class="col-8">list</div>
-          <div class="col-2">+7 (844) 296 51 14</div>
+          <div class="col-8 ps-0">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link navbar_" aria-current="page" href="#"
+                  >Магазины</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar_" href="#">Доставка и оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar_" href="#">Гарантия и возврат</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar_" href="#">Покупка в кредит</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar_" href="#">Эксперт</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar_" href="#">Дисконт</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar_" href="#">Комиссионка</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-auto ps-0">
+            <ul class="nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link info_time_"
+                  href="tel:+7 (844) 296 51 14"
+                  style="font-size: 12px"
+                >
+                  +7 (844) 296 51 14</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link info_time_ info_time_info"
+                  tabindex="0"
+                  role="button"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  data-bs-content="c 07:00 до 22:00
+
+                  по московскому времени, без выходных"
+                >
+                  <i class="icon-info-circled-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-2">ФОТОСКЛАД</div>
-          <div class="col">catalog+search</div>
-          <div class="col">three buttons</div>
+        <div id="header_fixed_" class="row" style="margin-bottom: -10px;">
+          <div class="col-auto ps-3">
+            <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="col-auto">
+            <a href="#" class="btn btn-addon btn-base-brand-1">
+              <img src="img/catalog_before.svg" alt="" />
+
+              Каталог
+            </a>
+          </div>
+          <div class="col-6">
+            <form class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Поиск"
+                aria-label="Поиск"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="icon-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="col" style="margin-top: -7px;">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link"  href="#">
+                  <span>
+                    <i class="icon-cube header-actions__item"></i></span>
+                  </span>
+                  <p style="font-size: 12px">Статус заказа</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#">
+                  <span>
+                    <i class="icon-user header-actions__item"></i></span>
+                  </span>
+                  <p style="font-size: 12px">Кабинет</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link"  href="#">
+                  <span>
+                    <i class="icon-basket header-actions__item"></i></span>
+                  </span>
+                  <p style="font-size: 12px">Корзина</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
+
+    <!-- Модальное окно -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="false"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Заголовок модального окна
+            </h1>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Коллапс для Каталога-->
+
+    <!--Модальное окно для регионов-->
     <div
       class="offcanvas offcanvas-end"
       tabindex="-1"
-      id="offcanvasRight"
+      id="offcanvasRightForRegion"
       aria-labelledby="offcanvasRightLabel"
     >
       <div class="offcanvas-header">
@@ -197,18 +330,54 @@
             >
           </li>
         </ul>
+        <p>
+          От выбранного города зависят цены, наличие товара и способы доставки.
+        </p>
       </div>
     </div>
     <section class="main_">
       <div class="container">
         <div class="row">
-          <div class="col-12">Импульсный моноблок Jinbei MSN-400 Pro HSS</div>
+          <div class="col-12">
+            <a
+              tabindex="0"
+              class="btn btn-lg btn-danger"
+              role="button"
+              data-bs-toggle="popover"
+              data-bs-trigger="focus"
+              data-bs-title="Отклоняемое всплывающее окно"
+              data-bs-content="А вот и потрясающий контент. Это очень увлекательно. Верно?"
+              >Отклоняемое всплывающее окно</a
+            >
+
+            <div style="height: 2000px">
+              Импульсный моноблок Jinbei MSN-400 Pro HSS
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-3"></div>
         </div>
       </div>
     </section>
+
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/man.js"></script>
+    <!-- Подключение jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Подключение Bootstrap JS (Popovers требуют Bootstrap JS) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Инициализация popovers
+        var popoverTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl);
+        });
+      });
+    </script>
   </body>
 </html>
