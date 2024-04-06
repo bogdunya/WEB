@@ -114,31 +114,31 @@
               </button>
             </form>
           </div>
-          <div class="col" style="margin-top: -7px;">
+          <div class="col-auto">
             <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link"  href="#">
+              <li class="nav-item skk_ ">
+                <a style="text-decoration: none;" href="#">
                   <span>
-                    <i class="icon-cube header-actions__item"></i></span>
+                    <i class="icon-cube header-actions__item "></i></span>
                   </span>
-                  <p style="font-size: 12px">Статус заказа</p>
+                  <p class="standart_text_">Статус заказа</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="#">
+              <li class="nav-item skk_ ">
+                <a style="text-decoration: none;"  href="#">
                   <span>
                     <i class="icon-user header-actions__item"></i></span>
                   </span>
-                  <p style="font-size: 12px">Кабинет</p>
+                  <p class="standart_text_">Кабинет</p>
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link"  href="#">
+              <li class="nav-item skk_ ">
+                <a style="text-decoration: none;"  href="#">
                   <span>
                     <i class="icon-basket header-actions__item"></i></span>
                   </span>
-                  <p style="font-size: 12px">Корзина</p>
+                  <p class="standart_text_">Корзина</p>
                 </a>
               </li>
             </ul>
@@ -146,30 +146,6 @@
         </div>
       </div>
     </header>
-
-    <!-- Модальное окно -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-      data-bs-backdrop="false"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Заголовок модального окна
-            </h1>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer"></div>
-        </div>
-      </div>
-    </div>
-
-    <!--Коллапс для Каталога-->
 
     <!--Модальное окно для регионов-->
     <div
@@ -335,28 +311,141 @@
         </p>
       </div>
     </div>
+    
     <section class="main_">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <a
-              tabindex="0"
-              class="btn btn-lg btn-danger"
-              role="button"
-              data-bs-toggle="popover"
-              data-bs-trigger="focus"
-              data-bs-title="Отклоняемое всплывающее окно"
-              data-bs-content="А вот и потрясающий контент. Это очень увлекательно. Верно?"
-              >Отклоняемое всплывающее окно</a
-            >
-
-            <div style="height: 2000px">
+          <div class="col-12 ps-0 pe-0" style="margin-left: -80px; margin-top: -25px;">
+            <nav style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb" >
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="navbar_ breadcrumb_" href="#">Главная страница</a></li>
+                <li class="breadcrumb-item"><a class="navbar_" href="#">Каталог товаров</a></li>
+                <li class="breadcrumb-item"><a class="navbar_" href="#">Студийное оборудование</a></li>
+                <li class="breadcrumb-item"><a class="navbar_" href="#">Импульсный свет</a></li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-12 ps-0 pe-0" style="margin-left: -80px;">
+            <h3 class="fw-bold">
               Импульсный моноблок Jinbei MSN-400 Pro HSS
-            </div>
+            </h3>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-md-4 ps-0 pe-0" style="margin-left: -80px; margin-top: -15px;">
+            <ul class="nav">
+              <li class="rating nav-item">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+              </li>
+              <li class="nav-item hover_orange_" style="margin-top: 15px; "><a class="review_" href="#">
+                <p class="hover_orange_">Отзывы (0)</p>
+              </a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 offset-md-4 review_" style="margin-right: -325px;">
+            Код товара: 381000
+          </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-3"></div>
+          <div class="col-auto" style="margin-left: 20px;">
+            <img id="mainImage" src="/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_1.png" style="width: 350px;">
+            <div class="d-flex align-items-center" style="margin-left: 60px;">
+              <button type="button" class="btn btn-outline-dark mx-1 px-1 py-1" onclick="changeImage('/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_1.png')"><img src="img/Импульсный моноблок Jinbei MSN-400 Pro HSS_1.png" style="height: 30px;"></button>
+              <button type="button" class="btn btn-outline-dark mx-1 px-1 py-1" onclick="changeImage('/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_2.png')"><img src="img/Импульсный моноблок Jinbei MSN-400 Pro HSS_2.png" style="height: 30px;"></button>
+              <button type="button" class="btn btn-outline-dark mx-1 px-1 py-1" onclick="changeImage('/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_3.png')"><img src="img/Импульсный моноблок Jinbei MSN-400 Pro HSS_3.png" style="height: 30px;"></button>
+              <button type="button" class="btn btn-outline-dark mx-1 px-1 py-1" onclick="changeImage('/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_4.png')"><img src="img/Импульсный моноблок Jinbei MSN-400 Pro HSS_4.png" style="height: 30px;"></button>
+              <button type="button" class="btn btn-outline-dark mx-1 px-1 py-1" onclick="changeImage('/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_5.png')"><img src="img/Импульсный моноблок Jinbei MSN-400 Pro HSS_5.png" style="height: 30px;"></button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product_card_">
+              Фирменная гарантия 1 год 
+            </div>
+            <div class="product-card_characteristics_row">
+              <div class="product-card_characteristics_key">
+                <div class="product_card_charact_name">
+                  Байонетное крепление
+                </div>
+                <div class="product-card_characteristics_dots"></div>
+              </div>
+              <div class="product_card_value">Bowens</div>
+            </div>
+            <div class="product-card_characteristics_row">
+              <div class="product-card_characteristics_key">
+                <div class="product_card_charact_name">
+                  Мощность, Дж
+                </div>
+                <div class="product-card_characteristics_dots"></div>
+              </div>
+              <div class="product_card_value">400</div>
+            </div>
+            <div class="product-card_characteristics_row">
+              <div class="product-card_characteristics_key">
+                <div class="product_card_charact_name">
+                  Скорость перезарядки
+                </div>
+                <div class="product-card_characteristics_dots"></div>
+              </div>
+              <div class="product_card_value">меньше 1 секунды</div>
+            </div>
+            <div class="product-card_characteristics_row">
+              <div class="product-card_characteristics_key">
+                <div class="product_card_charact_name">
+                  Регулировка мощности
+                </div>
+                <div class="product-card_characteristics_dots"></div>
+              </div>
+              <div class="product_card_value">Да</div>
+            </div>
+            <div class="product-card_characteristics_row">
+              <div class="product-card_characteristics_key">
+                <div class="product_card_charact_name">
+                  Управление пилотным светом
+                </div>
+                <div class="product-card_characteristics_dots"></div>
+              </div>
+              <div class="product_card_value">Да</div>
+            </div>
+            <div class="product_card_disclaimer">Внешний вид и цвет товара может отличаться от представленного на фотографии</div>
+            <div style="margin-top: 20px;"><a class="nav-link navbar_" href="#">Все характеристики ></a></div>
+            <div style="margin-top: -10px;"><a class="nav-link navbar_" href="#">Описание ></a></div>
+          </div>
+          <div class="col">
+            <div class="product-card_price_outer">
+              <div class="product_card_old_price">32 499 ₽</div>
+                <div class="product_card_price">
+                  25 999 ₽ 
+                  <div class="plumbs-tile plumbs-tile--line">
+                    <div class="plumbs-tile__item discount">-20%</div>
+                  </div>
+                </div>
+              <div class="product_card_disclaimer">Товар закончился</div> 
+              <a
+              class="nav-link"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRightForRegion"
+              aria-controls="offcanvasRight"
+              href="#"
+              style="font-size: 14px; margin-left: -20px; margin-top: 20px;"
+              ><i class="icon-location"></i> Волгоград</a
+            >
+            </div>
+            
+            <button class="product-card__link">
+              Сообщить о поступлении
+            </button>
+            
+          </div>
         </div>
       </div>
     </section>
