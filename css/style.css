@@ -26,6 +26,8 @@
     border-bottom-left-radius: 0;
   }
 
+  
+
 .btn-base-brand-1 {
     background-color: rgb(255, 73, 31);
     color: rgb(255, 255, 255);
@@ -155,7 +157,7 @@
     .opacity0_5:hover, .opacity0_5:focus{
         opacity: 0.5;
     }
-.nav-link:hover, .nav-link:focus, .navbar_:hover, .navbar:focus, .city-modal__cities-link:hover, .hover_orange_:hover, .hover_orange_:focus{
+.nav-link:hover, .nav-link:focus, .navbar_:hover, .navbar:focus, .city-modal__cities-link:hover, .hover_orange_:hover, .hover_orange_:focus, #btAC_:hover, #btAC_:focus{
     color: #ff491f;
     text-decoration-color: #ff491f;
   }

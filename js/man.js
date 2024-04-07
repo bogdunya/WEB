@@ -19,3 +19,15 @@ function changeImage(imageUrl) {
       });
     });
   });
+
+  document.getElementById("btAC_").addEventListener("click", function() {
+    // При нажатии на кнопку 1, будет эмулировано нажатие на кнопку 2
+    document.getElementById("btC_").click();
+});
+
+document.getElementById('btC_').addEventListener('click', function() {
+    // Получаем элемент collapse
+    var collapseElement = document.getElementById('haracter_');
+    // Прокручиваем к элементу collapse
+    collapseElement.scrollIntoView({ behavior: 'smooth' });
+});

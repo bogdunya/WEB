@@ -101,14 +101,16 @@
               <input
                 type="text"
                 class="form-control"
-                placeholder="Поиск"
+                placeholder="Искать товары ..."
                 aria-label="Поиск"
                 aria-describedby="button-addon2"
+                style="border-right: none;"
               />
               <button
                 class="btn btn-outline-secondary"
                 type="button"
                 id="button-addon2"
+                style="border-color: #ced4da; border-left: none;"
               >
                 <i class="icon-search"></i>
               </button>
@@ -423,7 +425,7 @@
               <div class="product_card_value">Да</div>
             </div>
             <div class="product_card_disclaimer">Внешний вид и цвет товара может отличаться от представленного на фотографии</div>
-            <div style="margin-top: 20px;"><a class="nav-link navbar_" href="#">Все характеристики ></a></div>
+            <div style="margin-top: 20px;" id="btAC_"><a class="nav-link navbar_ " >Все характеристики ></a></div>
             <div style="margin-top: -10px;"><a class="nav-link navbar_" href="#">Описание ></a></div>
           </div>
           <div class="col">
@@ -586,7 +588,7 @@
         <div class="row">
           <div class="col-12" style="margin-left: 15px; margin-top: 80px;">
             <h4 class="fw-bold" style="margin-bottom: 40px;">
-              Похожие товары в наличии
+              Купить товар в других магазинах
             </h4>
           </div>
           <div class="col-12" style="margin-left: 15px;">
@@ -599,7 +601,7 @@
                 <button type="button" class="btn btn_ " data-bs-toggle="collapse" href="#opisanie_" aria-expanded="false" aria-controls="opisanie_">Описание</button>
               </div>
               <div class="btn-group me-2" role="group" aria-label="Характеристики">
-                <button type="button" class="btn btn_" data-bs-toggle="collapse" href="#haracter_" aria-expanded="false" aria-controls="haracter_">Характеристики</button>
+                <button id="btC_" type="button" class="btn btn_" data-bs-toggle="collapse" href="#haracter_" aria-expanded="false" aria-controls="haracter_">Характеристики</button>
               </div>
               <div class="btn-group me-2" role="group" aria-label="Отзывы">
                 <button type="button" class="btn btn_" data-bs-toggle="collapse" href="#otz_" aria-expanded="false" aria-controls="otz_">Отзывы <span style="color: #ccc;">0</span></button>
@@ -795,7 +797,7 @@
         <div class="row">
           <div class="col-12" style="margin-left: 15px; margin-top: 80px;">
             <h4 class="fw-bold" style="margin-bottom: 40px;">
-              Похожие товары в наличии
+              С этим товаром покупают
             </h4>
           </div>
 
@@ -1330,7 +1332,7 @@
          <div class="row">
           <div class="col-12" style="margin-left: 15px; margin-top: 80px;">
             <h4 class="fw-bold" style="margin-bottom: 40px;">
-              С этим товаром покупают
+              Похожие товары
             </h4>
           </div>
 
@@ -1984,6 +1986,27 @@
     })(window);
 </script>
 <!-- End Yandex.Market Widget -->
+<script>
+  document.querySelectorAll('.nav-link[data-bs-toggle="collapse"]').forEach(function(link) {
+      link.addEventListener('click', function(event) {
+          var targetId = this.getAttribute('href');
+          var targetElement = document.querySelector(targetId);
+
+          if (targetElement && targetElement.classList.contains('show')) {
+              event.preventDefault(); // Предотвращаем переход по ссылке
+
+              // Прокручиваем к целевому элементу
+              targetElement.scrollIntoView({
+                  behavior: 'smooth', // Плавная прокрутка
+                  block: 'start' // Выравнивание по верхней границе окна
+              });
+          }
+      });
+  });
+</script>
+
+
+
 
 
 
