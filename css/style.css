@@ -33,6 +33,7 @@
     font-weight: 500;
 }
 
+
 .btn-addon {
     -webkit-box-align: center;
     align-items: center;
@@ -247,6 +248,15 @@ font-size: 12px;
     text-decoration: line-through;
 }
 
+.btn_ {
+    background-color: #f8f7f5; /* Устанавливаем цвет кнопок */
+    transition: background-color 0.3s ease; /* Добавляем плавное переходное состояние */
+}
+
+.btn_:hover {
+    background-color: #e0e0e0; /* При наведении меняем цвет на потемнее */
+}
+
 .product_card_price {
     font-weight: 600;
     font-size: 1.75rem;
@@ -260,6 +270,18 @@ font-size: 12px;
     margin-right: 0.5rem;
     letter-spacing: -.02em;
 }
+
+
+.footer_{
+    margin-top: 100px;
+    background-color: #353433;
+}
+
+.footer_text_color{
+    color: white;
+}
+
+
 
 .plumbs-tile__item.discount {
     color: #fff;
@@ -314,4 +336,34 @@ font-size: 12px;
     font-weight: 700;
     height: 2.875rem;
     margin-top: 15px;
+}
+
+.underline-row {
+    position: relative; /* Устанавливаем позицию для относительного позиционирования */
+  }
+  
+  .underline-row::after {
+    content: ''; /* Добавляем пустой контент */
+    position: absolute; /* Устанавливаем позицию для абсолютного позиционирования */
+    left: 0; /* Размещаем подчеркивание в начале строки */
+    bottom: -40px; /* Размещаем подчеркивание внизу строки */
+    width: 100%; /* Ширина подчеркивания равна ширине строки */
+    height: 1px; /* Толщина подчеркивания */
+    background-color: #ccc; /* Цвет подчеркивания */
+  }
+
+.text_12px{
+    font-size: 12px;
+}
+
+.text-grey{
+    color: grey;
+}
+.collapse{
+    border: 0;
+    box-shadow: none;
+  }
+  .carousel-control-prev-icon-dark,
+.carousel-control-next-icon-dark {
+    filter: invert(100%);
 }
