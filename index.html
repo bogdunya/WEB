@@ -116,25 +116,29 @@
           </div>
           <div class="col-auto">
             <ul class="nav">
-              <li class="nav-item skk_ ">
-                <a style="text-decoration: none;" href="#">
+              <li class="nav-item skk_" >
+                <a class="opacity0_5" class="" style="text-decoration: none;" href="#">
                   <span>
                     <i class="icon-cube header-actions__item "></i></span>
                   </span>
                   <p class="standart_text_">Статус заказа</p>
                 </a>
               </li>
-              <li class="nav-item skk_ ">
-                <a style="text-decoration: none;"  href="#">
+              <li class="nav-item skk_ dropdown" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="opacity0_5" style="text-decoration: none;"  href="#">
                   <span>
                     <i class="icon-user header-actions__item"></i></span>
                   </span>
-                  <p class="standart_text_">Кабинет</p>
+                  <p class="standart_text_ ">Кабинет</p>
                 </a>
+                <div class="dropdown-content" style="opacity: 1;">
+                  <a href="#"class= "btn btn-addon btn-base-brand-1" >Войти > </a>
+                  <a href="#" class="btn  btn-base-brand-2">Зарегистрироваться</a>
+                </div>
               </li>
 
               <li class="nav-item skk_ ">
-                <a style="text-decoration: none;"  href="#">
+                <a class="opacity0_5" style="text-decoration: none;"  href="#">
                   <span>
                     <i class="icon-basket header-actions__item"></i></span>
                   </span>
@@ -317,7 +321,7 @@
     <section class="main_">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 ps-0 pe-0" style="margin-left: 30px; margin-top: -25px;">
+          <div class="col-10 ps-0 pe-0" style="margin-left: 30px; margin-top: -25px;">
             <nav style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb" >
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a class="navbar_ breadcrumb_" href="#">Главная страница</a></li>
@@ -327,7 +331,7 @@
               </ol>
             </nav>
           </div>
-          <div class="col-12 ps-0 pe-0" style="margin-left: 30px;">
+          <div class="col-10 ps-0 pe-0" style="margin-left: 30px;">
             <h3 class="fw-bold">
               Импульсный моноблок Jinbei MSN-400 Pro HSS
             </h3>
@@ -353,7 +357,7 @@
               </a></li>
             </ul>
           </div>
-          <div class="col-md-4 offset-md-4 review_" style="margin-right: -325px;">
+          <div class="col-2 offset-md-4 review_" style="">
             Код товара: 381000
           </div>
           </div>
@@ -450,7 +454,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12" style="margin-left: 15px; margin-top: 80px;">
+          <div class="col-10" style="margin-left: 15px; margin-top: 80px;">
             <h4 class="fw-bold" style="margin-bottom: 40px;">
               Похожие товары в наличии
             </h4>
@@ -586,7 +590,7 @@
             </h4>
           </div>
           <div class="col-12" style="margin-left: 15px;">
-          <div id="marketWidget"></div>
+          <div class="col-10" id="marketWidget"></div>
           </div>
 
           <div class="col" style="margin-left: 15px; margin-top: 30px;">
@@ -1867,19 +1871,78 @@
 
 
     <section class="footer_">
-      <div class="container">
+      <div class="container-fluid" style="margin-left: 0; margin-right: 0; padding: 0; padding-left: 15px; padding-right: 0;">
+        <div class="row" style="padding-top:  80px;">
+          <div class="col-3">
+            <h5 class="footer_text_color">Персональные предложения и акции</h5>
+            <div class="input-group mb-3 ">
+              <input type="email" class="form-control custom-input"  placeholder="E-mail" aria-label="Email" aria-describedby="basic-addon2">
+              <button class="btn btn-outline-secondary custom-input" style="border-left: none;" type="button" id="basic-addon2">></button>
+            </div>
+            <p style="font-size: 12px; color: grey;">Подписываясь на рассылку, вы соглашаетесь на обработку <span style="color: white;">персональных данных</span></p>
+            
+            <a href="#"><img class=" media_" src="img/youtube-32.png" alt="" ></a>
+            <a href="#"><img class=" media_" src="img/vk_2-32.png" alt="" ></a>
+            <a href="#"><img class=" media_" src="img/yandexzen_1-32.png" alt="" ></a>
+            <a href="#"><img class=" media_" src="img/classmates-32.png" alt="" ></a>
+            <a href="#"><img class=" media_" src="img/tg-32.png" alt="" ></a>
+            
+          </div>
+          <div class="col ">
+            
+            <h6 class="footer_text_color text-center">Компания фотосклад</h6>
+            <a class="font_footer_link" href="#">О компании</a> <br>
+            <a class="font_footer_link" href="#">Акции и скидки</a> <br>
+            <a class="font_footer_link" href="#">Новости компании</a> <br>
+            <a class="font_footer_link" href="#">Эксклюзивные обзоры фототехники</a> <br>
+            <a class="font_footer_link" href="#">Вакансии компании</a> <br>
+            <a class="font_footer_link" href="#">Пользовательское соглашение</a> <br>
+            <a class="font_footer_link" href="#">Соглашение об обработке персональных данных</a> <br>
+            <a class="font_footer_link" href="#">Правила применения рекомендательных технологий</a> <br>
+            <a class="font_footer_link" href="#">Terms and Conditions for client from EU</a> <br>
+          </div>
+
+          <div class="col ">
+            <h6 class="footer_text_color text-center">Помощь покупателю</h6>
+            <a class="font_footer_link" href="#">Адреса магазинов и пунктов выдачи</a><br>
+            <a class="font_footer_link" href="#">Доставка и оплата</a><br>
+            <a class="font_footer_link" href="#">Гарантия, возврат и обмен</a><br>
+            <a class="font_footer_link" href="#">Покупки в кредит и рассрочку</a><br>
+            <a class="font_footer_link" href="#">Подарочные сертификаты</a><br>
+            <a class="font_footer_link" href="#">Не устраивает цена?</a><br>
+            <a class="font_footer_link" href="#">Вопрос-ответ (FAQ)</a><br>
+            <a class="font_footer_link" href="#">Личный кабинет</a><br>
+            <a class="font_footer_link" href="#">Скупка б/у фотоаппаратов</a><br>
+            <a class="font_footer_link" href="#">Помощь в Телеграмм</a><br>
+          </div>
+
+          <div class="col ">
+            <h6 class="footer_text_color text-center">Информация</h6>
+              <a class="font_footer_link" href="#">Отзывы о магазине</a><br>
+              <a class="font_footer_link" href="#">Оплата банковскими картами</a><br>
+              <a class="font_footer_link" href="#">Корпоративным клиентам</a><br>
+              <a class="font_footer_link" href="#">Поставщикам</a><br>
+              <a class="font_footer_link" href="#">Аренда площадей</a><br>
+              <a class="font_footer_link" href="#">СМИ о нас</a><br>
+              <a class="font_footer_link" href="#">Контакты</a><br>
+              <a class="font_footer_link" href="#">Обратная связь</a><br>
+            
+          </div>
+
+        </div>
+        <div class="row mt-5">
+          <div class="col-8" >
+            <p style="font-size: 10px; color: grey;">Все права защищены законом об авторском праве. Никакая часть содержимого сайта не может быть использована, репродуцирована, передана любым электронным, копировальным или другим способом без предварительного письменного разрешения владельца авторских прав.</p>
+          </div>
+          <div class="col-4">
+            <a href="#"><img src="img/visa-logo-32.png" alt="" style="scale: 1.5; margin-left: 20px;"></a>
+            <a href="#"><img src="img/mastercard-32.png" alt="" style="scale: 1.5;margin-left: 20px"></a>
+            <a href="#"><img src="img/мир-32.png" alt="" style="scale: 1.5;margin-left: 20px"></a>
+          </div>
+        </div>
         <div class="row">
-          <div class="col">
-            <h2 class="footer_text_color" style="height: 2000px;">Персональные предложения и акции</h2>
-          </div>
-          <div class="col">
-
-          </div>
-          <div class="col">
-
-          </div>
-          <div class="col">
-
+          <div class="col-12" style="height: 80px;">
+             
           </div>
         </div>
       </div>
