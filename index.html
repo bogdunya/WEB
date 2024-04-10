@@ -15,22 +15,22 @@
   <body>
     <header
       class="header_"
-      style="border: 1px solid #fff; box-shadow: 0px 5px 40px #d3d3d3"
+      style="border: 1px solid #fff; box-shadow: 0px 5px 40px #d3d3d3 "
     >
-      <div class="container-fluid">
-        <div class="row no-gutters">
-          <div class="col-2 ps-0">
+      <div class="container-xxl">
+        <div class="row justify-content-between">
+          <div class="col-auto">
             <a
               class="nav-link"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRightForRegion"
               aria-controls="offcanvasRight"
               href="#"
-              style="font-size: 14px"
+              style="font-size: 14px;"
               ><i class="icon-location"></i> Волгоград</a
             >
           </div>
-          <div class="col-8 ps-0">
+          <div class="col-8">
             <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link navbar_" aria-current="page" href="#"
@@ -57,7 +57,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-auto ps-0">
+          <div class="col-auto">
             <ul class="nav">
               <li class="nav-item">
                 <a
@@ -85,26 +85,27 @@
             </ul>
           </div>
         </div>
-        <div id="header_fixed_" class="row" style="margin-bottom: -10px;">
-          <div class="col-auto ps-3">
+        <div id="header_fixed_" class="row justify-content-between mt-2" >
+          <div class="col-auto ">
             <a href="#"><img src="img/logo.svg" alt="logo" /></a>
           </div>
+          
           <div class="col-auto">
-            <a href="#" class="btn btn-addon btn-base-brand-1">
-              <img src="img/catalog_before.svg" alt="" />
+                <a href="#" class="btn me-2 btn-addon btn-base-brand-1 d-flex align-items-center justify-content-center" >
+                  <img src="img/catalog_before.svg" alt="" />
 
-              Каталог
-            </a>
+                  Каталог
+                </a>
           </div>
-          <div class="col-6">
-            <form class="input-group">
+          <div class="col">
+            <div class="input-group" style="width: 100%;">
               <input
                 type="text"
                 class="form-control"
                 placeholder="Искать товары ..."
                 aria-label="Поиск"
                 aria-describedby="button-addon2"
-                style="border-right: none;"
+                style="border-right: none; min-width: 10px;"
               />
               <button
                 class="btn btn-outline-secondary"
@@ -114,8 +115,9 @@
               >
                 <i class="icon-search"></i>
               </button>
-            </form>
+            </div>
           </div>
+
           <div class="col-auto">
             <ul class="nav">
               <li class="nav-item skk_" >
@@ -321,9 +323,9 @@
   
 
     <section class="main_">
-      <div class="container-fluid">
+      <div class="container-xxl ps-4">
         <div class="row">
-          <div class="col-10 ps-0 pe-0" style="margin-left: 30px; margin-top: -25px;">
+          <div class="col-12" style="margin-top: -25px;">
             <nav style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb" >
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a class="navbar_ breadcrumb_" href="#">Главная страница</a></li>
@@ -333,14 +335,14 @@
               </ol>
             </nav>
           </div>
-          <div class="col-10 ps-0 pe-0" style="margin-left: 30px;">
+          <div class="col-12">
             <h3 class="fw-bold">
               Импульсный моноблок Jinbei MSN-400 Pro HSS
             </h3>
           </div>
         </div>
         <div class="row justify-content-between">
-          <div class="col-md-4 ps-0 pe-0" style="margin-left: 30px; margin-top: -15px;">
+          <div class="col-auto" style="margin-top: -15px;">
             <ul class="nav">
               <li class="rating nav-item">
                 <input type="radio" id="star5" name="rating" value="5">
@@ -359,14 +361,14 @@
               </a></li>
             </ul>
           </div>
-          <div class="col-2 offset-md-4 review_" style="">
+          <div class="col-auto review_">
             Код товара: 381000
           </div>
-          </div>
         </div>
-        <div class="row underline-row">
-          <div class="col-auto" style="margin-left: 20px;">
-            <img id="mainImage" src="/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_1.png" style="width: 350px;">
+        
+        <div class="row justify-content-between">
+          <div class="col-6">
+            <img id="mainImage" src="/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_1.png" style="width: 450px">
             <div class="d-flex align-items-center" style="margin-left: 60px;">
               <button type="button" class="btn btn-outline-dark mx-1 px-1 py-1" onclick="changeImage('/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_1.png')"><img src="img/Импульсный моноблок Jinbei MSN-400 Pro HSS_1.png" style="height: 30px;"></button>
               <button type="button" class="btn btn-outline-dark mx-1 px-1 py-1" onclick="changeImage('/img/Импульсный моноблок Jinbei MSN-400 Pro HSS_2.png')"><img src="img/Импульсный моноблок Jinbei MSN-400 Pro HSS_2.png" style="height: 30px;"></button>
@@ -452,16 +454,16 @@
             <button class="product-card__link" >
               Сообщить о поступлении
             </button>
-            
           </div>
         </div>
+
         <div class="row">
-          <div class="col-10" style="margin-left: 15px; margin-top: 80px;">
+          <div class="col-10" style="margin-top: 80px;">
             <h4 class="fw-bold" style="margin-bottom: 40px;">
               Похожие товары в наличии
             </h4>
           </div>
-          <div class="col-6" style="margin-left: 15px;">
+          <div class="col-6" >
             <div class="card-group">
               <div class="card" style="width: 18rem;">
                 <img src="img/Вспышка студийная Godox QS400II_1.png" class="card-img-top" alt="...">
@@ -586,16 +588,16 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12" style="margin-left: 15px; margin-top: 80px;">
+          <div class="col-12" style="margin-top: 80px;">
             <h4 class="fw-bold" style="margin-bottom: 40px;">
               Купить товар в других магазинах
             </h4>
           </div>
-          <div class="col-12" style="margin-left: 15px;">
-          <div class="col-10" id="marketWidget"></div>
+          
+          <div class="col-12" id="marketWidget"></div>
           </div>
 
-          <div class="col" style="margin-left: 15px; margin-top: 30px;">
+          <div class="col" style=" margin-top: 30px;">
             <div class="btn-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
               <div class="btn-group me-2" role="group" aria-label="Описание">
                 <button type="button" class="btn btn_ " data-bs-toggle="collapse" href="#opisanie_" aria-expanded="false" aria-controls="opisanie_">Описание</button>
@@ -1864,19 +1866,17 @@
          </div>
         
 
-
-
-
       </div>
     </section>
 
 
 
     <section class="footer_">
-      <div class="container-fluid" style="margin-left: 0; margin-right: 0; padding: 0; padding-left: 15px; padding-right: 0;">
-        <div class="row" style="padding-top:  80px;">
-          <div class="col-3">
-            <h5 class="footer_text_color">Персональные предложения и акции</h5>
+      <div class="container-xxl ps-4" >
+        <div class="row justify-content-between" style="padding-top:  80px;">
+
+          <div class="col-3 me-5">
+            <h4 class="footer_text_color">Персональные предложения и акции</h4>
             <div class="input-group mb-3 ">
               <input type="email" class="form-control custom-input"  placeholder="E-mail" aria-label="Email" aria-describedby="basic-addon2">
               <button class="btn btn-outline-secondary custom-input" style="border-left: none;" type="button" id="basic-addon2">></button>
@@ -1890,9 +1890,9 @@
             <a href="#"><img class=" media_" src="img/tg-32.png" alt="" ></a>
             
           </div>
-          <div class="col ">
+          <div class="col">
             
-            <h6 class="footer_text_color text-center">Компания фотосклад</h6>
+            <h6 class="footer_text_color">Компания фотосклад</h6>
             <a class="font_footer_link" href="#">О компании</a> <br>
             <a class="font_footer_link" href="#">Акции и скидки</a> <br>
             <a class="font_footer_link" href="#">Новости компании</a> <br>
@@ -1904,8 +1904,8 @@
             <a class="font_footer_link" href="#">Terms and Conditions for client from EU</a> <br>
           </div>
 
-          <div class="col ">
-            <h6 class="footer_text_color text-center">Помощь покупателю</h6>
+          <div class="col">
+            <h6 class="footer_text_color">Помощь покупателю</h6>
             <a class="font_footer_link" href="#">Адреса магазинов и пунктов выдачи</a><br>
             <a class="font_footer_link" href="#">Доставка и оплата</a><br>
             <a class="font_footer_link" href="#">Гарантия, возврат и обмен</a><br>
@@ -1918,8 +1918,8 @@
             <a class="font_footer_link" href="#">Помощь в Телеграмм</a><br>
           </div>
 
-          <div class="col ">
-            <h6 class="footer_text_color text-center">Информация</h6>
+          <div class="col">
+            <h6 class="footer_text_color">Информация</h6>
               <a class="font_footer_link" href="#">Отзывы о магазине</a><br>
               <a class="font_footer_link" href="#">Оплата банковскими картами</a><br>
               <a class="font_footer_link" href="#">Корпоративным клиентам</a><br>
